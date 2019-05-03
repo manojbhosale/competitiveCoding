@@ -1,0 +1,48 @@
+package techGig;
+
+import java.util.Scanner;
+/*
+        A
+      A B
+    A B C
+  A B C D
+A B C D E
+
+*/
+
+
+import java.io.*;
+import java.util.*;
+public class Triangles {
+	/* Read input from STDIN. Print your output to STDOUT*/
+
+	   public static void main(String args[] ) throws Exception {
+
+			Scanner in = new Scanner(System.in);
+
+			      int testNum = in.nextInt();
+			    //char firstChar = 'A'; 
+				for(int i = 1; i <= testNum; i++){
+				char firstChar = 'A';
+				for(int j = testNum; j > 0; j--){
+					if(j <= i){
+						System.out.print(firstChar);
+						firstChar++;
+					}else{
+						System.out.print(" ");
+					}
+
+			      if(j == 1){
+			         break;
+			      }
+			      System.out.print(" ");
+				}
+			   if(i != testNum){
+				   System.out.println();
+			   }
+			}
+
+			   }
+	
+
+		}
