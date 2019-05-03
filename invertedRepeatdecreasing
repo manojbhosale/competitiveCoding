@@ -1,0 +1,48 @@
+package techGig;
+
+import java.util.Scanner;
+/*
+E E E E E
+  D D D D
+    C C C
+      B B
+        A
+*/
+
+
+import java.io.*;
+import java.util.*;
+public class Stars {
+	/* Read input from STDIN. Print your output to STDOUT*/
+
+	   public static void main(String args[] ) throws Exception {
+
+			Scanner in = new Scanner(System.in);
+				
+			      int testNum = in.nextInt();
+			      int forA = 64;
+			      int last = testNum + forA;
+			      char lastChar = (char) last;
+				for(int i = 0; i < testNum; i++,lastChar--){
+				for(int j = 1,k=1; j <= testNum; j++){
+					if(j > i) {
+						System.out.print(lastChar);
+						//lastChar++;
+					}else {
+						System.out.print(" ");
+					}
+					if(j == testNum) {
+						break;
+					}
+					System.out.print(" ");
+				}
+				if(i < testNum-1) {
+					System.out.println();					
+				}
+				
+			   			}
+
+			   }
+	
+
+		}
