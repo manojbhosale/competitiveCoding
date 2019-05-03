@@ -1,0 +1,38 @@
+/* Read input from STDIN. Print your output to STDOUT*/
+/*
+5 5 5 5 5
+  4 4 4 4
+    3 3 3
+      2 2
+        1
+*/
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+ public static void main(String args[] ) throws Exception {
+
+			Scanner in = new Scanner(System.in);
+
+			      int testNum = in.nextInt();
+ 
+				for(int i = 0, k = testNum; i < testNum; i++,k--){
+				for(int j = 1; j <= testNum; j++){
+					if(j > i) {
+						System.out.print(k);
+					}else {
+						System.out.print(" ");
+					}
+					if(j == testNum) {
+						break;
+					}
+					System.out.print(" ");
+				}
+				if(i < testNum-1) {
+					System.out.println();					
+				}
+				
+			   			}
+
+			   }
+	
+}
