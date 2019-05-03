@@ -1,0 +1,47 @@
+package techGig;
+
+import java.util.Scanner;
+
+/*
+        A
+      C C C
+    E E E E E
+  G G G G G G G
+I I I I I I I I I
+  
+ */
+
+
+
+public class Equilaterals {
+	
+public static void main(String[] args) {
+		
+		Scanner scn = new Scanner(System.in);
+		
+		int input = scn.nextInt();
+		
+		char start = 'A'; 
+		for(int i = input,k = 1; i > 0; i--, k+=2) {
+			for(int j = 1; j < i; j++) {
+				System.out.print("  ");
+			}
+			for(int j = 0; j < k; j++) {
+				System.out.print(start);
+				if(j == k-1) {
+					break;
+				}
+				System.out.print(" ");
+			}
+			start+=2;
+         if(i != 1){
+            System.out.println();
+         }
+			
+
+		}
+		
+	}
+
+
+}
