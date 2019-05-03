@@ -1,0 +1,37 @@
+package techGig;
+
+import java.util.Scanner;
+/*
+        A
+      B B
+    C C C
+  D D D D
+E E E E E
+
+*/public class Triangles {
+	public static void main(String args[] ) throws Exception {
+
+		Scanner in = new Scanner(System.in);
+
+		      int testNum = in.nextInt();
+		    char firstChar = 'A'; 
+			for(int i = 1; i <= testNum; i++,firstChar++){
+			for(int j = testNum; j > 0; j--){
+				if(j <= i){
+					System.out.print(firstChar);
+				}else{
+					System.out.print(" ");
+				}
+
+		      if(j == 1){
+		         break;
+		      }
+		      System.out.print(" ");
+			}
+		   if(i != testNum){
+			   System.out.println();
+		   }
+		}
+
+		   }
+		}
